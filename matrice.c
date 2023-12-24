@@ -105,7 +105,7 @@ int main()
         printf("\n");
     }
 
-    printf("La Matrice A B:\n");
+    printf("La Matrice B:\n");
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < m2; j++)
@@ -144,7 +144,7 @@ int main()
     }
 
 
-    printf("La Matrice A C:\n");
+    printf("La Matrice C:\n");
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < m2; j++)
