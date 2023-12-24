@@ -95,7 +95,7 @@ int main()
     sem_init(&semEmpty, 0, N);
 
    
-    printf("Original Matrix A:\n");
+    printf("La Matrice A:\n");
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < m2; j++)
@@ -105,7 +105,7 @@ int main()
         printf("\n");
     }
 
-    printf("Original Matrix B:\n");
+    printf("La Matrice A B:\n");
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < m2; j++)
@@ -144,7 +144,7 @@ int main()
     }
 
 
-    printf("Resulting Matrix C:\n");
+    printf("La Matrice A C:\n");
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < m2; j++)
