@@ -1,30 +1,23 @@
-# projet
-projet système d'exploitation
+# <font color="red"> Projet **Systeme D'exploitation** Les Threads </font>
 
-On veut effectuer en parallèle(En utilisant le modèle producteurs/consommateur) le produit de deux matrices: 
-B (n1* m1)  et C (n2 * m2) ⇒ la matrice résultante A=B*C ;
+##Q1: Quelles sont les structures de données à utiliser ?
 
-Les matrices sont remplis par des valeurs aléatoires
+Il faut utiliser des structures de données pour représenter les matrices B, C, et A,
+ainsi qu'un tampon T pour stocker les résultats intermédiaires.
+On peut utiliser des tableaux bidimensionnels pour les matrices et un tableau unidimensionnel pour le tampon.
 
-Les résultats intermédiaires seront placés dans un tampon de taille “T[N]”.
+##Q2: Comment allez-vous protéger l'accès à ces données?
 
-Chaque threads producteurs calcule une ligne de la matrice résultante A et range les résultat dans le tampon T
+Pour protéger l'accès aux données partagées entre les threads,
+on peut utiliser des verrous (mutex) et des sémaphores.
+Un mutex peut être utilisé pour assurer l'accès exclusif aux matrices B, C, et A,
+et un ensemble de sémaphores pour synchroniser la communication entre les producteurs et les consommateurs.
 
-Les threads consommateurs consomment l'élément T[y]  le place dans la matrice résultante A  au bon emplacement!
+##Q3: Quels sont les risques ?
 
-q1: Quelles sont les structures de données à utiliser ?
+Les risques principaux incluent les conditions de concurrence (race conditions),
+où plusieurs threads tentent d'accéder ou de modifier les mêmes données simultanément.
+Cela peut conduire à des résultats imprévisibles et des erreurs dans le calcul des matrices.
+#multiplication-matrice-using-threads
 
-q2: Comment allez-vous protéger l'accès à ces données?
-
-q3- quels sont les risques?
-
-1-Cloner le projet github : projet  ; et le modifier le selon les exigences ci-dessus
-
-2- Pour chaque nouvelle idée créer une nouvelle branche; les autres étudiants peuvent améliorer l'idée en créant une nouvelle branche!
-
-3-Les premières réponses sont mieux notées!
-
-4-Bien gérer les éxceptions 
-
-5-Bien gérer les messages d'erreurs!
-
+# multiplication-matrice-using-threads
